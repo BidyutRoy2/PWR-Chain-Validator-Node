@@ -10,7 +10,7 @@ sudo apt update
 
 # Install the default JDK
 echo "Installing default JDK..."
-sudo apt install -y default-jdk
+sudo apt install openjdk-17-jdk
 
 # Download the validator.jar file
 echo "Downloading validator.jar..."
