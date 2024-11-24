@@ -16,12 +16,14 @@
 
 ## 1 [Create PWR Browser Wallet](https://chromewebstore.google.com/u/3/detail/pwr-wallet/kennjipeijpeengjlogfdjkiiadhbmjl)
 
-## 2 Copy & Past Ubuntu/VPS Terminal
+## 2 Register Airdrop Quest : https://airdrop.pwrlabs.io?referral_code=46d64506-e693-4b44-ae37-8f77f5a2988a
+
+## 3 Copy & Past Ubuntu/VPS Terminal
 ```
 source <(wget -O - https://raw.githubusercontent.com/BidyutRoy2/PWR-Chain-Validator-Node/refs/heads/main/PWRChain.sh)
 ```
 
-## 3 Import Your Validator - Replace <YOUR_PWRWallet_Privatekey> Password
+## 4 Import Your Validator - Replace <YOUR_PWRWallet_Privatekey> Password
 ```
 sudo java -jar validator.jar --import-key <private key here> password
 ```
@@ -31,12 +33,12 @@ sudo java -jar validator.jar --import-key <private key here> password
 ip route show | grep -i default | awk '{ print $3}'
 ```
 
-## 4 Run the Node - Replace <YOUR_SERVER_IP> with your server's actual IP
+## 5 Run the Node - Replace <YOUR_SERVER_IP> with your server's actual IP
 ```
 sudo java -jar validator.jar password <YOUR_SERVER_IP> --compression-level 0
 ```
 
-## 5 Join Discord: https://discord.gg/N7fjPHF3
+## 6 Join Discord: https://discord.gg/N7fjPHF3
   
 <p align="center">
 <img src='https://github.com/user-attachments/assets/03404769-d35b-424f-a720-9dca4d8c7a11' style="width:800px;height:400px;">
@@ -50,7 +52,7 @@ sudo java -jar validator.jar password <YOUR_SERVER_IP> --compression-level 0
   
 ## After claiming your coins, your node will initiate a transaction to enlist as a validator
 
-## 6 Running in the Background
+## 7 Running in the Background
 ```
 nohup sudo java -jar validator.jar password <YOUR_SERVER_IP> --loop-udp-test &
 ```
