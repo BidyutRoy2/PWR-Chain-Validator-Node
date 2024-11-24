@@ -21,7 +21,7 @@
 source <(wget -O - https://raw.githubusercontent.com/BidyutRoy2/PWR-Chain-Validator-Node/refs/heads/main/PWRChain.sh)
 ```
 
-## 3 Import Your Validator
+## 3 Import Your Validator - Replace <YOUR_PWRWallet_Privatekey> Password
 ```
 sudo java -jar validator.jar --import-key <private key here> password
 ```
